@@ -3,7 +3,7 @@ def main():
     y = float(input("Enter y:"))
 
 # floating point precision
-    print(f"x times y={(x*y):.5f}")
+    print(f"x times y={(x*y):.50f}")
 
 
 if __name__ == '__main__':
