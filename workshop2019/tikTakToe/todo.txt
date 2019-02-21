@@ -2,4 +2,14 @@ TODO: 8 combination of winner using dict key use break and declare winner.
   min 5 move requires to decleare a winner.
 TODO: control input.
   don't update dict while controlling
-  
+
+// don't mind it.
+1 khubsurat hoti hai sirf tumhrey liye.
+2 wo kamm karney par majbur krr degi bina boley.
+3 gadmarney ka awqat rakhti h.
+4 6odney k badd lesson deti.
+6 ladki m ethics nii hota h.
+7 nutanki chodney ka adat hota h.
+8 galti krney par sakal banyegi.
+//9 tang ghich sakti h.
+10. galti kabhi accept nii krti h.
