@@ -1,0 +1,5 @@
+TODO: 8 combination of winner using dict key use break and declare winner.
+  min 5 move requires to decleare a winner.
+TODO: control input.
+  don't update dict while controlling
+  
