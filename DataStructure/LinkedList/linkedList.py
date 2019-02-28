@@ -28,14 +28,36 @@ class LinkedList:
                 break
             self = self.next
 
-        # temp=LinkedList(val)
+    def deleteDups(self):
+        s = []
+        ptr = self
+        while True:
+            if ptr == self:
+                s.append(ptr.data)
+            if ptr.next == None:
+                break
+            if ptr.next.data in s:
+                ptr.next = ptr.next.next
+                if ptr.next == None:
+                    break
+            else:
+                s.append(ptr.next.data)
+                ptr = ptr.next
 
-    # def insertAtHead(self, val):
-    #     """
-    #     insert val at Head of linked list.
-    #     """
-    #     first = LinkedList(val)
-    #     first.next = self.next
-    #     del self
-    #     self = first
-    #     self.display()
+        print(s)
+
+
+# temp = LinkedList(val)
+
+
+def insertAtHead(self, val):
+    pass
+
+    # """
+    # insert val at Head of linked list.
+    # """
+    # first = LinkedList(val)
+    # first.next = self.next
+    # del self
+    # self = first
+    # self.display()
