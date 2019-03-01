@@ -65,6 +65,14 @@ class LinkedList:
             else:
                 ptr = ptr.next
         return False
+    def deleteKth(self,k=0):
+        ptr=self.next
+        if ptr.next==None:
+            if k==1:
+                self.__init__()
+                return True
+            return False
+        while ptr.next!=None:
 
 
 # temp = LinkedList(val)
