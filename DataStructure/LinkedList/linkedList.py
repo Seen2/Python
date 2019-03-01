@@ -1,7 +1,7 @@
 class LinkedList:
-    def __init__(self, val=0):
+    def __init__(self, val=None, next=None):
         self.data = val
-        self.next = None
+        self.next = next
 
     def display(self):
         """
@@ -45,6 +45,26 @@ class LinkedList:
                 ptr = ptr.next
 
         print(s)
+
+    def delete(self, val):
+        ptr = self
+        while True:
+            if ptr.next == None:
+                if ptr.data == val:
+                    self = LinkedList()
+                    return True
+                else:
+                    return False
+            elif ptr.next.data == val:
+                ptr.next = ptr.next.next
+                return True
+            elif ptr.data == val:
+                self.__init__(self.next.data, self.next.next)
+
+                return True
+            else:
+                ptr = ptr.next
+        return False
 
 
 # temp = LinkedList(val)

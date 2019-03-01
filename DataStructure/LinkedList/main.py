@@ -6,15 +6,12 @@ from linkedList import LinkedList
 def main():
     l = LinkedList(9)
     l.insert(10)
-    l.insert(11)
-    l.insert(11)
     l.insert(9)
-    l.insert(10)
     l.insert(11)
-    l.insert(10)
+    l.insert(11)
     l.display()
     print("\n")
-    l.deleteDups()
+    print(l.delete(11))
     print("\n")
     try:
         l.display()
