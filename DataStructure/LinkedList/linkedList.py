@@ -66,6 +66,35 @@ class LinkedList:
                 ptr = ptr.next
         return False
 
+    def deleteKthFromLast(self, k=0):
+        tb = []
+        ptr = self
+        while True:
+            if ptr.next == None:
+                if k == 1:
+                    self.__init__()
+                    return True
+
+                return False
+            elif len(tb) == k:
+                if ptr.next.next != None:
+                    tb.reverse()
+                    tb.pop()
+                    tb.reverse()
+                    ptr = ptr.next
+                else:
+                    if tb[0].next != None:
+                        tb[0].next = tb[0].next.next
+
+                    else:
+                        tb[0] = None
+                    return True
+
+            else:
+                ptr = ptr.next
+            tb.append(ptr.next)
+        return False
+
 
 # temp = LinkedList(val)
 
