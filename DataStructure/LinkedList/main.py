@@ -13,7 +13,8 @@ def main():
     # print("\n")
     # print(l.delete(11))
     l.display()
-    print(l.deleteKthFromLast(1))
+    print()
+    print(l.deleteKth(1))
     print("\n")
     try:
         l.display()
