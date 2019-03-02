@@ -9,13 +9,14 @@ class LinkedList:
         """
         ptr = self
         while True:
-            print(ptr.data)
+            print(ptr.data, end=" ")
 
             if ptr.next == None:
                 break
             ptr = ptr.next
 
         del ptr
+        print()
 
     def insert(self, val):
         """
