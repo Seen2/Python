@@ -1,6 +1,4 @@
-
-
-from arrayStack import Stack
+from linkedListStack import Stack
 
 
 def main():
