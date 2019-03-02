@@ -14,9 +14,10 @@ def partition(l, x):
     l = lt+gt
     lList = LinkedList(l[0])
     n = len(l)
+    del gt, lt, ptr
     for i in range(1, n):
         lList.insert(l[i])
-    del l, gt, lt, ptr
+    del l, n
     return lList
 
 
