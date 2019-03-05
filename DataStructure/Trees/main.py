@@ -1,9 +1,10 @@
-from binarySearchTree import BinarySearchTree
+from binarySearchTree import BinarySearchTree, Node
 
-t = BinarySearchTree(10)
+tree = BinarySearchTree()
 
-print(t.insert(9))
-print(t.insert(34))
+print(tree.insert(tree.root, Node(34)))
 
-print(t.insert(33))
-print(t.insert(35))
+print(tree.insert(tree.root, Node(32)))
+print(tree.insert(tree.root, Node(39)))
+
+print(tree.insert(tree.root, Node(30)))
