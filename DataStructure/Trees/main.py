@@ -2,9 +2,14 @@ from binarySearchTree import BinarySearchTree, Node
 
 tree = BinarySearchTree()
 
-print(tree.insert(tree.root, Node(34)))
+tree.insert(tree.root, Node(34))
 
-print(tree.insert(tree.root, Node(32)))
-print(tree.insert(tree.root, Node(39)))
+tree.insert(tree.root, Node(32))
+tree.insert(tree.root, Node(39))
 
-print(tree.insert(tree.root, Node(30)))
+tree.insert(tree.root, Node(30))
+
+print(tree.search(tree.root, 32))
+print(tree.search(tree.root, 34))
+print(tree.search(tree.root, 30))
+print(tree.search(tree.root, 39))

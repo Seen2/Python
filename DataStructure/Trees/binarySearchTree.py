@@ -21,18 +21,32 @@ class BinarySearchTree:
             self.root = node
             return True
         elif root.data > node.data:
-            print(root.data)
+            # print(root.data)
             if root.left == None:
                 root.left = node
                 return True
             else:
-                self.insert(root.left, node)
+                return self.insert(root.left, node)
         elif root.data < node.data:
-            print(root.data)
+            # print(root.data)
             if root.right == None:
                 root.right = node
                 return True
             else:
-                self.insert(root.right, node)
+                return self.insert(root.right, node)
+        else:
+            return False
+
+    def search(self, root, val):
+        '''
+        root=binary tree root.
+
+        '''
+        if root.data == val:
+            return True
+        elif root.data > val:
+            return self.search(root.left, val)
+        elif root.data < val:
+            return self.search(root.right, val)
         else:
             return False
