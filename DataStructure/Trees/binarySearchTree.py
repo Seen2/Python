@@ -42,6 +42,10 @@ class BinarySearchTree:
         root=binary tree root.
 
         '''
+        try:
+            assert root != None
+        except Exception as e:
+            print(e)
         if root.data == val:
             return True
         elif root.data > val:
