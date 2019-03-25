@@ -1,29 +1,21 @@
 def main():
-    l = [1, 2, 3, 4, 5, 9, 11]
+    l = [1, 3, 4]
 
-    print(binarySearch(l, 11))
+    print(binarySearch(l, 2))
 
 
 def binarySearch(l, n):
-    '''
-    takes a sorted list :l
-    a number :n to be search in the list
-
-    return True if n is in the l
-    else return False.
-    '''
-
-    e = len(l)-1
-    i = e//2
-    while e-i != 1:
-        print(i, e)
-        if n == l[i] or n == l[e]:
+    e = len(l)
+    i = 0
+    m = (i+e)//2
+    while i < e:
+        if l[m] == n:
             return True
-        elif n > l[i]:
-            i = (i+e)//2
+        elif l[m] > n:
+            e = m-1
         else:
-            e = (i+e)//2
-            i = 0
+            i = m+1
+        m = (i+e)//2
 
     return False
 
